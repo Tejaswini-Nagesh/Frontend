@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <body>
+            <script>
+                var n=parseInt(prompt("enter upto which u want to print prime number"));
+                var prime;
+
+                for(i=2;i<=n;i++)
+                {
+                    prime=true;
+                    for(j=2;j<=parseInt(i/2);j++)
+                    {
+                        if(i%j==0)
+                        {
+                            prime=false;
+                            break;
+                        }
+                    }
+                    if(prime)
+                    document.write(i+ " ");
+                }
+                </script>
+        </body>
+    </head>
+</html>

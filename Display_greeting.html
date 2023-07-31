@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Display greeting</title>
+    </head>
+    <body>
+        <script>
+            var hrs=new Date().getHours();
+            document.write("time is" +hrs +"o' clock"+"<br>");
+            if(hrs<4)
+            document.write("hey, good night");
+            else if(hrs<12)
+            document.write("hello, good morning");
+            else if(hrs<17)
+            document.write("hello, good afternoon");
+            else
+            document.write("hello,good evening");
+        </script>
+    </body>
+</html>

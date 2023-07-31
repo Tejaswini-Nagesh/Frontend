@@ -1,0 +1,22 @@
+*{
+    margin:0;
+
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: rgb(173, 169, 169);
+
+}
+.box{
+    padding: 35px;
+    margin:10px;
+    color:white;
+    background-color: rgb(145, 14, 14);
+    font-size: 30px;
+}
+.b2{
+    flex-grow:1;
+}
