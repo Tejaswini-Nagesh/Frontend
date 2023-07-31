@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var i=0;
+        var arr=new Array();
+        function addElementToArray(){
+            arr[i]=documnent.getElementById("number").value;
+            alert("element" +arr[i]+ "added at index" +i);
+            i++;
+            document.getElementById("number").value="";
+
+        }
+     function displayArrayElements(){
+         var txt= "<br/>";
+         for(x=0;x<arr.length;x++){
+             txt+= "element" +x+ "=" +arr[x]+ "<br/>";
+         }
+         document.getElementById("result").innerHTML=txt;
+
+     }   
+        </script>
+    </head>
+    <body>
+        <input></input>
+        <input type="button" value="add" onclick="addElementToArray();"></input>
+        <input type="button" value="Display" onclick="displayArrayElements();"></input>
+        <div id="result"></div>
+    </body>
+</html>
